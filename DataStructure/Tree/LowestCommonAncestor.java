@@ -25,6 +25,5 @@ public class LowestCommonAncestor {
         MyNode<Integer> myNode = new MyNode<>();
         myNode.add(5);
         myNode.display();
-
     }
 }

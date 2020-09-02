@@ -1,138 +1,6 @@
 package com.avijitsamanta.Collage;
 
 public class VehicleMain {
-
-    static class Vehicle {
-        private String vehicleName;
-        private String vehiclePrice;
-
-        public Vehicle() {
-            this.vehicleName = null;
-            this.vehiclePrice = null;
-        }
-
-        public String getVehicleName() {
-            return "Name- "+vehicleName;
-        }
-
-        public void setVehicleName(String vehicleName) {
-            this.vehicleName = vehicleName;
-        }
-
-        public String getVehiclePrice() {
-            return "Price- Rs." + vehiclePrice;
-        }
-
-        public void setVehiclePrice(String vehiclePrice) {
-            this.vehiclePrice = vehiclePrice;
-        }
-
-    }
-
-    static class TwoWheeler extends Vehicle {
-        private String brandName;
-        private String modelNo;
-
-        public TwoWheeler() {
-            this.brandName = null;
-            this.modelNo = null;
-        }
-
-        public String getBrandName() {
-            return "Brand- "+brandName;
-        }
-
-        public void setBrandName(String brandName) {
-            this.brandName = brandName;
-        }
-
-        public String getModelNo() {
-            return "Model- "+modelNo;
-        }
-
-        public void setModelNo(String modelNo) {
-            this.modelNo = modelNo;
-        }
-    }
-
-    static class FourWheeler extends Vehicle {
-        private String fuelType;
-        private String brandName;
-        private String modelName;
-        private String mileage;
-
-        public FourWheeler() {
-            this.fuelType = null;
-            this.brandName = null;
-            this.mileage = null;
-            this.modelName = null;
-        }
-
-        public String getFuelType() {
-            return "Fuel- " + fuelType;
-        }
-
-        public void setFuelType(String fuelType) {
-            this.fuelType = fuelType;
-        }
-
-        public String getBrandName() {
-            return "Brand- " + brandName;
-        }
-
-        public void setBrandName(String brandName) {
-            this.brandName = brandName;
-        }
-
-        public String getModelName() {
-            return "Model- " + modelName;
-        }
-
-        public void setModelName(String modelName) {
-            this.modelName = modelName;
-        }
-
-        public String getMileage() {
-            return "Mileage- " + mileage;
-        }
-
-        public void setMileage(String mileage) {
-            this.mileage = mileage;
-        }
-    }
-
-    static class Car extends FourWheeler {
-        private String noOfSeat;
-
-        public Car() {
-            this.noOfSeat = null;
-        }
-
-        public String getNoOfSeat() {
-            return "Seat capacity- " + noOfSeat;
-        }
-
-        public void setNoOfSeat(String noOfSeat) {
-            this.noOfSeat = noOfSeat;
-        }
-    }
-
-    static class Truck extends FourWheeler {
-        private String loadCapacity;
-
-        public Truck() {
-            this.loadCapacity = null;
-        }
-
-        public String getLoadCapacity() {
-            return "Load capacity- " + loadCapacity;
-        }
-
-        public void setLoadCapacity(String loadCapacity) {
-            this.loadCapacity = loadCapacity;
-        }
-    }
-
     public static void main(String[] args) {
 
         TwoWheeler twoWheeler = new TwoWheeler();
@@ -182,5 +50,136 @@ public class VehicleMain {
         System.out.println(truck.getLoadCapacity());
         System.out.println(truck.getFuelType());
         System.out.println(truck.getModelName());
+    }
+}
+
+class Vehicle {
+    private String vehicleName;
+    private String vehiclePrice;
+
+    public Vehicle() {
+        this.vehicleName = null;
+        this.vehiclePrice = null;
+    }
+
+    public String getVehicleName() {
+        return "Name- " + vehicleName;
+    }
+
+    public void setVehicleName(String vehicleName) {
+        this.vehicleName = vehicleName;
+    }
+
+    public String getVehiclePrice() {
+        return "Price- Rs." + vehiclePrice;
+    }
+
+    public void setVehiclePrice(String vehiclePrice) {
+        this.vehiclePrice = vehiclePrice;
+    }
+
+}
+
+class TwoWheeler extends Vehicle {
+    private String brandName;
+    private String modelNo;
+
+    public TwoWheeler() {
+        this.brandName = null;
+        this.modelNo = null;
+    }
+
+    public String getBrandName() {
+        return "Brand- " + brandName;
+    }
+
+    public void setBrandName(String brandName) {
+        this.brandName = brandName;
+    }
+
+    public String getModelNo() {
+        return "Model- " + modelNo;
+    }
+
+    public void setModelNo(String modelNo) {
+        this.modelNo = modelNo;
+    }
+}
+
+class FourWheeler extends Vehicle {
+    private String fuelType;
+    private String brandName;
+    private String modelName;
+    private String mileage;
+
+    public FourWheeler() {
+        this.fuelType = null;
+        this.brandName = null;
+        this.mileage = null;
+        this.modelName = null;
+    }
+
+    public String getFuelType() {
+        return "Fuel- " + fuelType;
+    }
+
+    public void setFuelType(String fuelType) {
+        this.fuelType = fuelType;
+    }
+
+    public String getBrandName() {
+        return "Brand- " + brandName;
+    }
+
+    public void setBrandName(String brandName) {
+        this.brandName = brandName;
+    }
+
+    public String getModelName() {
+        return "Model- " + modelName;
+    }
+
+    public void setModelName(String modelName) {
+        this.modelName = modelName;
+    }
+
+    public String getMileage() {
+        return "Mileage- " + mileage;
+    }
+
+    public void setMileage(String mileage) {
+        this.mileage = mileage;
+    }
+}
+
+class Car extends FourWheeler {
+    private String noOfSeat;
+
+    public Car() {
+        this.noOfSeat = null;
+    }
+
+    public String getNoOfSeat() {
+        return "Seat capacity- " + noOfSeat;
+    }
+
+    public void setNoOfSeat(String noOfSeat) {
+        this.noOfSeat = noOfSeat;
+    }
+}
+
+class Truck extends FourWheeler {
+    private String loadCapacity;
+
+    public Truck() {
+        this.loadCapacity = null;
+    }
+
+    public String getLoadCapacity() {
+        return "Load capacity- " + loadCapacity;
+    }
+
+    public void setLoadCapacity(String loadCapacity) {
+        this.loadCapacity = loadCapacity;
     }
 }

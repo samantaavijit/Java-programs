@@ -9,7 +9,7 @@ class Figure {
 }
 
 class Circle extends Figure {
-    private double r;
+    private final double r;
 
     public Circle(double r) {
         this.r = r;
@@ -29,7 +29,7 @@ class Circle extends Figure {
 }
 
 class Square extends Figure {
-    private double a;
+    private final double a;
 
     public Square(double a) {
         this.a = a;
@@ -49,7 +49,8 @@ class Square extends Figure {
 }
 
 class Rectangle extends Figure {
-    private double length, width;
+    private final double length;
+    private final double width;
 
     public Rectangle(double length, double width) {
         this.length = length;
@@ -70,7 +71,8 @@ class Rectangle extends Figure {
 }
 
 class Triangle extends Figure {
-    private double a, b;
+    private final double a;
+    private final double b;
 
     public Triangle(double a, double b) {
         this.a = a;

@@ -1,3 +1,5 @@
+package com.avijitsamanta.Problem;
+
 import java.util.*;
 
 class Two{
@@ -11,7 +13,7 @@ class Two{
 		
 	}
 
-	private int genarateRandon(){
+	private int generateRandom(){
 		return rand.nextInt(2);
 	}
 
@@ -43,12 +45,12 @@ class Two{
 
 		n=sc.nextInt();
 
-		int arr[][]=new int[n][n];
+		int[][] arr =new int[n][n];
 		Two obj=new Two();
 
 		for (int i=0;i<n ;i++ ) 
 			for(int j=0;j<n;j++)
-				arr[i][j]=obj.genarateRandon();
+				arr[i][j]=obj.generateRandom();
 
 		obj.display(arr);
 		obj.generateBorder(arr);

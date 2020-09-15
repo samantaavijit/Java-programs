@@ -11,7 +11,7 @@ public class Permutation {
 
     private static void permutation(String str, int i, int n) {
         if (i == n)
-            System.out.println(str);
+            System.out.print(str+" ");
         for (int a = i; a <= n; a++) {
             str = swap(str, i, a);
             permutation(str, i + 1, n);

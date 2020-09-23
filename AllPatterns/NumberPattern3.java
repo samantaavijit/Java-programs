@@ -9,15 +9,20 @@ import java.util.Scanner;
 54322
 54321
 */
+
+/*
+EEEEE
+EDDDD
+EDCCC
+EDCBB
+EDCBA
+ */
 public class NumberPattern3 {
-
-    int i, j, k;
-
-    void display(int n) {
-        for (i = 1; i <= n; i++) {
+    private static void display(int n) {
+        int k;
+        for (int i = 1; i <= n; i++) {
             k = n;
-            for (j = 1; j <= n; j++) {
-
+            for (int j = 1; j <= n; j++) {
                 if (i != 1 && j < i) {
                     System.out.print(k--);
                 } else
@@ -27,11 +32,25 @@ public class NumberPattern3 {
         }
     }
 
-    public static void main(String[] args) {
+    private static void displayChar(int n) {
+        int k;
+        for (int i = 1; i <= n; i++) {
+            k = n;
+            for (int j = 1; j <= n; j++) {
+                if (i != 1 && j < i) {
+                    System.out.print((char) (64 + k--));
+                } else
+                    System.out.print((char) (64 + k));
+            }
+            System.out.println();
+        }
+    }
 
-        NumberPattern3 obj = new NumberPattern3();
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the limit : ");
-        obj.display(sc.nextInt());
+        int n = sc.nextInt();
+        display(n);
+        displayChar(n);
     }
 }

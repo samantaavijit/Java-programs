@@ -11,13 +11,6 @@ import java.util.Scanner;
 */
 
 /*
- * * *
- * *
- *
- * *
- * * *
- */
-/*
 A B C
   B C
     C

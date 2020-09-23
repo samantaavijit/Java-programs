@@ -11,10 +11,10 @@ package com.avijitsamanta.AllPatterns;
  * 
  *         1 2 3 4 5 16 17 18 19 6 15 24 25 20 7 14 23 22 21 8 13 12 11 10 6
  */
-public class SpiralNumberOnetoNxN {
+public class SpiralNumberOneToNxN {
 
-	private void generateSpiralMatris(int n) {
-		int arr[][] = new int[n][n];
+	private void generateSpiralMatrix(int n) {
+		int[][] arr = new int[n][n];
 		int count = 0;
 		for (int i = 0; i < n; i++)
 			for (int j = 0; j < n; j++)
@@ -49,7 +49,7 @@ public class SpiralNumberOnetoNxN {
 
 	public static void main(String[] args) {
 
-		SpiralNumberOnetoNxN obj = new SpiralNumberOnetoNxN();
+		SpiralNumberOneToNxN obj = new SpiralNumberOneToNxN();
 		int[][] arr = {
 				{1,2,3,4,5},
 				{16,17,18,19,6},
@@ -57,7 +57,7 @@ public class SpiralNumberOnetoNxN {
 				{14,23,22,21,8},
 				{13,12,11,10,9}
 				};
-		obj.generateSpiralMatris(5);
+		obj.generateSpiralMatrix(5);
 		obj.displaySpiralMatrix(arr);
 	}
 

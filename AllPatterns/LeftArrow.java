@@ -38,9 +38,8 @@ public class LeftArrow {
 	}
 
 	public static void main(final String[] args) {
-		final LeftArrow obj = new LeftArrow();
-		@SuppressWarnings("resource")
-		final Scanner sc = new Scanner(System.in);
+		LeftArrow obj = new LeftArrow();
+		Scanner sc = new Scanner(System.in);
 		System.out.print("\nEnter the llimit ");
 		final int n = sc.nextInt();
 		obj.aa(n);

@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Palindrome {
     // REVERSE A STRING
     private static String rev(String str) {
-        String res = "";
+        StringBuilder res = new StringBuilder();
         for (char c : str.toCharArray())
-            res = c + res;
-        return res;
+            res.insert(0, c);
+        return res.toString();
     }
 
     private static boolean isPalindrome(String s1, String s2) {

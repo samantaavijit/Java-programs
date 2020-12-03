@@ -16,10 +16,19 @@ interface MyInterface {
     int add(int a, int b);
 }
 
-class B implements MyInterface {
+interface YourInterface {
+    int multiply(int a, int b);
+}
+
+class B implements MyInterface, YourInterface {
     @Override
     public int add(int a, int b) {
-        return a+b;
+        return a + b;
+    }
+
+    @Override
+    public int multiply(int a, int b) {
+        return a * b;
     }
 }
 
@@ -29,5 +38,6 @@ public class Assignment3 {
         a.add(20, 30);
         B b = new B();
         System.out.println("Addition (interface) is " + b.add(100, 185));
+        System.out.println("Multiplication is " + b.multiply(10, 18));
     }
 }

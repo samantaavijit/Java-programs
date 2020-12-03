@@ -1,8 +1,45 @@
 package com.avijitsamanta;
 
+import java.text.NumberFormat;
 import java.util.*;
 
 public class Main {
+    static int A, B;
+    static boolean flag = true;
+    static Scanner sc = new Scanner(System.in);
+
+//    static {
+//        A = sc.nextInt();
+//        B = sc.nextInt();
+//        if (A < 0 || B < 0) {
+//            flag = false;
+//            System.out.println("java.lang.Exception: Breadth and height must be positive");
+//        }
+//
+//    }
+
+    public static String findDay(int m, int d, int y) {
+        int t[] = {0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4};
+        y -= (m < 3) ? 1 : 0;
+        int c = (y + y / 4 - y / 100 + y / 400 + t[m - 1] + d) % 7;
+
+        switch (c) {
+            case 1:
+                return "MONDAY";
+            case 2:
+                return "TUESDAY";
+            case 3:
+                return "WEDNESDAY";
+            case 4:
+                return "THURSDAY";
+            case 5:
+                return "FRIDAY";
+            case 6:
+                return "SATURDAY";
+            default:
+                return "SUNDAY";
+        }
+    }
 
     static int missingNumber(int[] arr, int size) {
 
@@ -135,13 +172,28 @@ public class Main {
 //                {0, 0, 1, 2, 4, 0}};
 //        System.out.println(calculate(bArr));
 
+//
+//        int a = 10, b = 5;
+//        System.out.println(getResult(a, b));
+//
+//        int c = 50, d = 60;
+//        System.out.println(getResult(c, d));
+//        System.out.println(getResult(100, -50));
 
-        int a = 10, b = 5;
-        System.out.println(getResult(a, b));
+//        Scanner sc = new Scanner(System.in);
+//        int i = 1;
+//        String s; //= sc.nextLine();
+//        while (sc.hasNext()) {
+//            s = sc.nextLine();
+//            System.out.println((i++) + " " + s);
+//        }
 
-        int c = 50, d = 60;
-        System.out.println(getResult(c, d));
-        System.out.println(getResult(100, -50));
+//        if (flag) {
+//            System.out.println(A * B);
+//        }
+//
+
+
 
     }
 

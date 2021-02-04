@@ -1,3 +1,5 @@
+package com.avijitsamanta.ArrayPrograms;
+
 import java.util.*;
 
 /*
@@ -10,12 +12,12 @@ Output: [1,2,2,3,5,6]
 
 public class MergeSortedArray {
 
-    private void merge(int[] nums1, int m, int[] nums2, int n) {
+    private void merge(int[] a, int m, int[] b, int n) {
         int c = 0;
-        for (int i = m; i < nums1.length; i++)
-            nums1[i] = nums2[c++];
+        for (int i = m; i < a.length; i++)
+            a[i] = b[c++];
 
-        Arrays.sort(nums1);
+        Arrays.sort(a);
     }
 
     public static void main(String[] args) {
@@ -23,7 +25,7 @@ public class MergeSortedArray {
         MergeSortedArray obj = new MergeSortedArray();
         int[] arr = { 1, 2, 5, 0, 0, 0, 0 };
         int[] arr2 = { 2, 8, 9, 15 };
-        obj.merge(arr, 3, arr2, 4);
+        obj.merge(arr, arr.length- arr2.length, arr2, arr2.length);
         for (int a : arr)
             System.out.print(a + " ");
 

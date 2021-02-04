@@ -1,7 +1,9 @@
-package com.avijitsamanta.DS_ALGO;
+package com.avijitsamanta.ds_algo;
 /*
 https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/
  */
+
+import java.util.Arrays;
 
 public class FindMinAndMax {
     static class Pair {
@@ -110,9 +112,21 @@ public class FindMinAndMax {
         int[] arr = {1000, 11, 445, 1, 330, 3000};
 //        Pair minmax = getMinMax(arr);
 //        Pair minmax = getMinMax(arr, 0, arr.length - 1);
+        long a = System.nanoTime();
         Pair minmax = getMinMax(arr, arr.length);
         System.out.println("Minimum is " + minmax.min);
         System.out.println("Maximum is " + minmax.max);
+        System.out.println(System.nanoTime() - a);
+
+        a = System.nanoTime();
+        int min = 99999, max = -999999;
+        for (int val : arr) {
+            if (val > max) max = val;
+            if (val < min) min = val;
+        }
+        System.out.println("Minimum is " + min);
+        System.out.println("Maximum is " + max);
+        System.out.println(System.nanoTime() - a);
 
     }
 }

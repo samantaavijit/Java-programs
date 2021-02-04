@@ -1,4 +1,4 @@
-package com.avijitsamanta.DS_ALGO;
+package com.avijitsamanta.ds_algo;
 
 import java.util.*;
 

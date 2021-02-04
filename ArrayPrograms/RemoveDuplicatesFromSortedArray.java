@@ -1,3 +1,5 @@
+package com.avijitsamanta.ArrayPrograms;
+
 /*
 Given nums = [0,0,1,1,1,2,2,3,3,4],
 
@@ -5,7 +7,7 @@ Your function should return length = 5, with the first five elements of nums bei
 
 It doesn't matter what values are set beyond the returned length.
 */
-public class RemoveDuplicatesfromSortedArray {
+public class RemoveDuplicatesFromSortedArray {
 
     public int removeDuplicates(int[] nums) {
         int i = 0;
@@ -26,7 +28,7 @@ public class RemoveDuplicatesfromSortedArray {
     }
 
     public static void main(String[] args) {
-        RemoveDuplicatesfromSortedArray obj = new RemoveDuplicatesfromSortedArray();
+        RemoveDuplicatesFromSortedArray obj = new RemoveDuplicatesFromSortedArray();
         int nums[] = { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
         obj.removeDuplicates(nums);
     }

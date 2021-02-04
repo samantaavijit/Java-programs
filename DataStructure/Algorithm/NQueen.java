@@ -1,4 +1,4 @@
-package com.avijitsamanta.DataStructure;
+package com.avijitsamanta.DataStructure.Algorithm;
 
 import java.util.Scanner;
 

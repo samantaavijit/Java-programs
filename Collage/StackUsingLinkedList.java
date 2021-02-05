@@ -7,8 +7,7 @@ class MyStack<E> {
     private int pos = -1;
 
     public void push(E val) {
-        list.add(val);
-        pos++;
+        list.add(++pos, val);
     }
 
     public E peek() throws Exception {
@@ -23,6 +22,13 @@ class MyStack<E> {
         pos--;
         return val;
     }
+
+    public void show() {
+        for (int i = 0; i <= pos; i++) {
+            System.out.print(list.get(i) + " ");
+        }
+        System.out.println();
+    }
 }
 
 public class StackUsingLinkedList {
@@ -36,9 +42,10 @@ public class StackUsingLinkedList {
             stack.push(i);
         }
 
+        stack.show();
         System.out.println("PEEK " + stack.peek());
         System.out.println("POP " + stack.pop());
         System.out.println("PEEK " + stack.peek());
-
+        stack.show();
     }
 }

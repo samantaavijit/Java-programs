@@ -1,3 +1,5 @@
+package com.avijitsamanta.ArrayPrograms;
+
 /*
 Input: arr = [10,2,5,3]
 Output: true
@@ -18,7 +20,7 @@ public class CheckIfNandItsDoubleExist {
 
     public static void main(String[] args) {
         CheckIfNandItsDoubleExist obj = new CheckIfNandItsDoubleExist();
-        int arr[] = { 10, 2, 5, 3 };
+        int[] arr = { 10, 2, 5, 3 };
         System.out.println(obj.checkIfExist(arr));
     }
 }

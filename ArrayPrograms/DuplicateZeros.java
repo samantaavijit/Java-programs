@@ -1,3 +1,5 @@
+package com.avijitsamanta.ArrayPrograms;
+
 /*
 Input: [1,0,2,3,0,4,5,0]
 Output: null

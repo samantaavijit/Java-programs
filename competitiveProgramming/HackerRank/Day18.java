@@ -1,7 +1,6 @@
 package com.avijitsamanta.competitiveProgramming.HackerRank;
 
 import com.avijitsamanta.Collage.MyQueue;
-
 import java.util.Stack;
 
 public class Day18 {
@@ -12,14 +11,16 @@ public class Day18 {
         void pushCharacter(char c) {
             stack.push(c);
         }
-        void enqueueCharacter(char c){
+
+        void enqueueCharacter(char c) {
             queue.add(c);
         }
-        Character popCharacter(){
+
+        Character popCharacter() {
             return stack.pop();
         }
-        Character dequeueCharacter() throws Exception {
 
+        Character dequeueCharacter() throws Exception {
             return queue.peek();
         }
     }

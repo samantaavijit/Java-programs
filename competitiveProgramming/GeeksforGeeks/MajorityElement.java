@@ -1,5 +1,18 @@
 package com.avijitsamanta.competitiveProgramming.GeeksforGeeks;
 
+/*
+Input:
+N = 3
+A[] = {1,2,3}
+Output:
+-1
+
+Input:
+N = 5
+A[] = {3,1,3,3,2}
+Output:
+3
+ */
 public class MajorityElement {
     private static int majorityElement(int[] a) {
         int n = a.length;

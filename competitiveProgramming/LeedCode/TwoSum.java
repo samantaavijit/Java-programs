@@ -21,8 +21,8 @@ public class TwoSum {
 
     public static void main(String[] args) {
         TwoSum obj = new TwoSum();
-        int nums[] = { 2, 7, 11, 15 };
-        int res[] = obj.twoSum(nums, 13);
+        int[] nums = { 2, 7, 11, 15 };
+        int[] res = obj.twoSum(nums, 13);
         for (int i : res) {
             System.out.print(i + " ");
         }

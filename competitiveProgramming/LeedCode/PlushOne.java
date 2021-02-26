@@ -1,5 +1,15 @@
 package com.avijitsamanta.competitiveProgramming.LeedCode;
+/*
+Input: digits = [1,2,3]
+Output: [1,2,4]
 
+
+Input: digits = [1,2,9]
+Output: [1,3,0]
+
+Input: digits = [9]
+Output: [1,0]
+ */
 public class PlushOne {
     private static int[] plusOne(int[] digits) {
         int index;

@@ -1,6 +1,5 @@
 package com.avijitsamanta.AllPatterns;
 
-import java.util.Scanner;
 
 /*
  * * * * * * * * *
@@ -78,9 +77,7 @@ public class Pattern1 {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the limit ");
-        int n = sc.nextInt();
+        int n = 5;
         display(n);
         displayNumbers(n);
         displayChar(n);
